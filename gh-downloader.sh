@@ -24,12 +24,12 @@ Usage: $progname [user repo] [OPTIONS]
 Alternatively, you can specify the user and the repo in the right order.
 
 Examples:
-    * Download the latest version of wait-host.sh from craftshell/wait-host and save the file to /usr/sbin/wait-host
-    $progname -u craftshell -r wait-host -t latest -f wait-host.sh -o /usr/sbin/wait-host
+    * Download the latest version of wait-host.sh from dockboxsh/wait-host and save the file to /usr/sbin/wait-host
+    $progname -u dockboxsh -r wait-host -t latest -f wait-host.sh -o /usr/sbin/wait-host
 
-    * Download the latest version of wait-host.sh from the master branch of craftshell/wait-host
+    * Download the latest version of wait-host.sh from the master branch of dockboxsh/wait-host
     * and save the file to /usr/sbin/wait-host
-    $progname -u craftshell -r wait-host -p ./ -b master -f wait-host.sh -o /usr/sbin/wait-host
+    $progname -u dockboxsh -r wait-host -p ./ -b master -f wait-host.sh -o /usr/sbin/wait-host
 
     If no file is specified when using the path option, the content of the folder will be downloaded
 
