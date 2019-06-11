@@ -1,8 +1,9 @@
-# gh-downloader
+# ![](https://github.com/docker-suite/artwork/raw/master/logo/png/logo_32.png) gh-downloader
+![License: MIT](https://img.shields.io/github/license/docker-suite/goss.svg?color=green&style=flat-square)
 
 Simple utility to download files from GitHub Repository
 
-## Usage
+## ![](https://github.com/docker-suite/artwork/raw/master/various/pin/png/pin_16.png) Usage
 
 ```sh
 Usage: gh-downloader.sh [user repo] [OPTIONS]
@@ -29,7 +30,7 @@ Examples:
     If no file is specified when using the path option, the content of the folder will be downloaded
 ```
 
-## GitHub token
+## ![](https://github.com/docker-suite/artwork/raw/master/various/pin/png/pin_16.png) GitHub token
 
 If you don't want to face a [Github rate limit](https://developer.github.com/v3/rate_limit/) use a personnal token:
 
