@@ -7,7 +7,7 @@
 readonly progname=$(basename $0)
 
 # Display help message
-function getHelp() {
+getHelp() {
     cat << USAGE >&2
 
 Usage: $progname [user repo] [OPTIONS]
@@ -167,7 +167,7 @@ if [ $cmdJq -ne 0 ]; then
 fi
 
 
-function updateOutput() {
+updateOutput() {
     # Default output to current directory
     output=${output:='.'}
     # Remove multiple /
@@ -189,7 +189,7 @@ function updateOutput() {
     fi
 }
 
-function updateTag() {
+updateTag() {
     if [ "$tag" = "latest" ]; then
         echo $(fromApi "releases/latest" | jq -r ".tag_name")
     else
@@ -197,7 +197,7 @@ function updateTag() {
     fi
 }
 
-function updateBranch() {
+updateBranch() {
     if [ -z "$branch" ]; then
         echo $(fromApi "" | jq -r ".default_branch")
     else
@@ -205,7 +205,7 @@ function updateBranch() {
     fi
 }
 
-function fromApi() {
+fromApi() {
     # Github API
     api='https://api.github.com'
     #
@@ -221,7 +221,7 @@ function fromApi() {
 #   $2: output of the file
 # If the output is a directory, the filename is extracted from the url
 # ##############################################################################
-function downloadFile() {
+downloadFile() {
     # Get the url file to download
     # and the output
     if [ $# -ne 2 ]; then
